@@ -6,6 +6,31 @@
   width: 100%;
 }
 
+.text-style {
+  margin: 0 auto;
+  width: 94%;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 769px) {
+  .text-style {
+    width: 640px;
+  }
+
+  .button-style:hover {
+    background-color: none;
+    cursor: default;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .button-style:hover {
+    background-color: inherit;
+    cursor: default;
+  }
+}
+
 .button-style {
   width: 100%;
   background-color: #24ad98;
