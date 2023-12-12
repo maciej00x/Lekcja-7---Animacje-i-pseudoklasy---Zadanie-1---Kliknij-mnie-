@@ -6,27 +6,28 @@
   width: 100%;
 }
 
-/* TABLET */
-
-@media screen and (min-width: 769px) {
-  .button-style:hover {
-    background-color: none;
-    cursor: default;
-  }
-}
-
 .button-style {
+  width: 100%;
   background-color: #24ad98;
-  border: none;
   color: white;
   padding: 20px 40px;
-  text-align: center;
-  text-decoration: white;
-  font-size: 16px;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .button-style:hover {
   background-color: white;
   color: #24ad98;
+}
+
+@media only screen and (max-width: 768px) {
+   {
+    pointer-events: none;
+  }
+
+  .button-style:hover {
+    background-color: #24ad98;
+    color: white;
+  }
 }
