@@ -2,12 +2,8 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-}
-
 .button-style {
-  width: 100%;
+  width: fit-content;
   background-color: #24ad98;
   color: white;
   padding: 20px 40px;
@@ -16,18 +12,29 @@
   transition: background-color 0.5s, color 0.5s;
 }
 
+@media (hover: hover) {
+  .button-style:hover {
+    background-color: white;
+    color: #24ad98;
+  }
+}
+
+
+
+
+/* ALTERNATYWA 
+
 .button-style:hover {
   background-color: white;
   color: #24ad98;
 }
+*/
 
-@media only screen and (max-width: 768px) {
-   {
+/*@media only screen and (max-width: 768px) {
+  .button-style {
     pointer-events: none;
   }
-
-  .button-style:hover {
-    background-color: #24ad98;
-    color: white;
-  }
 }
+
+
+*/
