@@ -37,4 +37,40 @@
 }
 
 
+ALTERNATYWA 2 
+
+
+<body>
+    <div class="container">
+        <button class="my-button"></button>
+    </div>
+</body>
+
+
+.container {
+  width: 94%;
+}
+
+.my-button {
+  width: fit-content;
+  background-color: #24ad98;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 640px;
+  }
+
+  .my-button:hover {
+    background-color: white;
+    color: #24ad98;
+  }
+}
+
+
 */
