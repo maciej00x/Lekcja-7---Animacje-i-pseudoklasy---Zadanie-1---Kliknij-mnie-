@@ -3,7 +3,7 @@
 }
 
 .button-style {
-  width: fit-content;
+  width: 100%;
   background-color: #24ad98;
   color: white;
   padding: 20px 40px;
@@ -12,15 +12,18 @@
   transition: background-color 0.5s, color 0.5s;
 }
 
+@media (min-width: 1240px) {
+  .button-style {
+    width: auto;
+  }
+}
+
 @media (hover: hover) {
   .button-style:hover {
     background-color: white;
     color: #24ad98;
   }
 }
-
-
-
 
 /* ALTERNATYWA 
 
